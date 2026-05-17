@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f6f8;
+}
+
+.ust-nav {
+  background-color: #ffffff;
+  padding: 20px 10%;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.logo-hisse {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0a141e;
+  vertical-align: middle;
+  width: 20%;
+}
+
+.menu-linkler {
+  display: inline-block;
+  width: 55%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.menu-linkler a {
+  text-decoration: none;
+  color: #323c46;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.menu-buttonlar {
+  display: inline-block;
+  width: 24%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.giris-btn {
+  background-color: white;
+  border: 1px solid #c8c8c8;
+  padding: 7px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.qeydiyyat-btn {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* basliq hisse */
+.orta-basliq {
+  text-align: center;
+  padding: 50px 20px 10px 20px;
+}
+
+.ana-titl {
+  font-size: 36px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.alt-titl {
+  font-size: 15px;
+  color: #6e6e6e;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.kartlar-qutusu {
+  width: 85%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.kart-blok {
+  display: inline-block;
+  width: 30%;
+  background-color: #ffffff;
+  margin: 15px 1.5%;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(220, 220, 220, 0.5);
+  vertical-align: top;
+}
+
+.kart-ikon svg {
+  width: 45px;
+  height: 45px;
+  fill: #ff8c00;
+  margin-bottom: 15px;
+}
+
+.kart-ad {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0a141e;
+  margin-bottom: 10px;
+}
+
+.kart-metn {
+  font-size: 13px;
+  color: #787878;
+  line-height: 1.4;
+}
+
+.alt-hisse {
+  background-color: #02182b;
+  color: #ffffff;
+  padding: 60px 0;
+  font-size: 14px;
+}
+
+.uc-lu-gorus {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-blok {
+  flex: 1;
+}
+
+.footer-blok h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-blok p {
+  color: #a4b8c9;
+  line-height: 1.6;
+}
+
+.footer-blok ul {
+  list-style: none;
+}
+
+.footer-blok ul li {
+  margin-bottom: 10px;
+}
+
+.footer-blok ul li a {
+  color: #a4b8c9;
+  text-decoration: none;
+}
+
+.footer-blok ul li a:hover {
+  color: #ffffff;
+}
+
+.email-link {
+  color: #a4b8c9;
+  margin-bottom: 25px;
+}
+
+.email-link i {
+  margin-right: 8px;
+}
+
+.sosial-ikonlar {
+  display: flex;
+  gap: 12px;
+}
+
+.sosial-ikonlar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #132d46;
+  color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sosial-ikonlar a:hover {
+  background-color: #f39c12;
+}

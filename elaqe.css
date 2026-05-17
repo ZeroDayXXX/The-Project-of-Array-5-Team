@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #222;
+}
+
+.ust-nav {
+  background-color: #ffffff;
+  padding: 20px 10%;
+  border-bottom: 1px solid #e6e6e6;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-hisse {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0a141e;
+}
+
+.menu-linkler {
+  text-align: center;
+}
+
+.menu-linkler a {
+  text-decoration: none;
+  color: #323c46;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.menu-buttonlar {
+  text-align: right;
+  display: flex;
+  gap: 5px; 
+}
+
+.giris-btn {
+  background-color: white;
+  border: 1px solid #c8c8c8;
+  padding: 7px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto; 
+}
+
+.qeydiyyat-btn {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto; 
+}
+
+/* --- Digər Hissələr --- */
+header {
+  text-align: center;
+  padding: 60px;
+  background: rgb(245, 246, 248);
+}
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.melumatlar {
+  width: 45%;
+  background: white;
+  padding: 15px 0;
+}
+form {
+  width: 45%;
+  background: white;
+  padding: 15px 0;
+}
+h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+h3 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  background: rgb(245, 246, 248);
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  background: rgb(245, 246, 248);
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 100%;
+  background: darkorange;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+
+.alt-hisse {
+  background-color: #02182b;
+  color: #ffffff;
+  padding: 60px 0;
+  font-size: 14px;
+}
+
+.uc-lu-gorus {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-blok {
+  flex: 1;
+}
+
+.footer-blok h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-blok p {
+  color: #a4b8c9;
+  line-height: 1.6;
+}
+
+.footer-blok ul {
+  list-style: none;
+}
+
+.footer-blok ul li {
+  margin-bottom: 10px;
+}
+
+.footer-blok ul li a {
+  color: #a4b8c9;
+  text-decoration: none;
+}
+
+.footer-blok ul li a:hover {
+  color: #ffffff;
+}
+
+.email-link {
+  color: #a4b8c9;
+  margin-bottom: 25px;
+}
+
+.email-link i {
+  margin-right: 8px;
+}
+
+.sosial-ikonlar {
+  display: flex;
+  gap: 12px;
+}
+
+.sosial-ikonlar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #132d46;
+  color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sosial-ikonlar a:hover {
+  background-color: #f39c12;
+}
+

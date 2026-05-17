@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #f5f6f8;
+}
+
+.ust-nav {
+  background-color: #ffffff;
+  padding: 20px 10%;
+  border-bottom: 1px solid #e6e6e6;
+  width: 100%;
+}
+
+.logo-hisse {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0a141e;
+  vertical-align: middle;
+  width: 20%;
+}
+
+.menu-linkler {
+  display: inline-block;
+  width: 55%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.menu-linkler a {
+  text-decoration: none;
+  color: #323c46;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.menu-buttonlar {
+  display: inline-block;
+  width: 24%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.giris-btn {
+  background-color: white;
+  border: 1px solid #c8c8c8;
+  padding: 7px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.qeydiyyat-btn {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.konteyner {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 30px; 
+}
+
+.basliq {
+  font-size: 48px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.filtr {
+  background: white;
+  padding: 18px;
+  border-radius: 18px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.axtar {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #f3f4f6;
+  font-size: 15px;
+  outline: none;
+}
+
+.secim {
+  width: 320px;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #f3f4f6;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.say {
+  color: #6b7280;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.kartlar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.kart {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.sekil {
+  position: relative;
+}
+
+.sekil img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.etiket {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: orange;
+  color: white;
+  padding: 7px 12px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.melumat {
+  padding: 18px;
+}
+
+.melumat h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.muellif {
+  color: #6b7280;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.reyting {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.ulduz {
+  color: #f59e0b;
+}
+
+.melumat h3 {
+  color: #f59e0b;
+  font-size: 34px;
+  margin-bottom: 18px;
+}
+
+.duyme {
+  display: flex;
+  gap: 10px;
+}
+
+.sebet {
+  flex: 1;
+  border: none;
+  background: #f59e0b;
+  color: white;
+  padding: 13px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.sebet:hover {
+  background: #ea9500;
+}
+
+.urek {
+  width: 45px;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.tapilmadi {
+  margin-top: 40px;
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ef4444;
+  display: none;
+}
+
+
+.alt-hisse {
+  background-color: #02182b;
+  color: #ffffff;
+  padding: 60px 0;
+  font-size: 14px;
+}
+
+.uc-lu-gorus {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-blok {
+  flex: 1;
+}
+
+.footer-blok h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-blok p {
+  color: #a4b8c9;
+  line-height: 1.6;
+}
+
+.footer-blok ul {
+  list-style: none;
+}
+
+.footer-blok ul li {
+  margin-bottom: 10px;
+}
+
+.footer-blok ul li a {
+  color: #a4b8c9;
+  text-decoration: none;
+}
+
+.footer-blok ul li a:hover {
+  color: #ffffff;
+}
+
+.email-link {
+  color: #a4b8c9;
+  margin-bottom: 25px;
+}
+
+.email-link i {
+  margin-right: 8px;
+}
+
+.sosial-ikonlar {
+  display: flex;
+  gap: 12px;
+}
+
+.sosial-ikonlar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #132d46;
+  color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sosial-ikonlar a:hover {
+  background-color: #f39c12;
+}

@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.ust-nav {
+  background-color: #ffffff;
+  padding: 20px 10%;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.logo-hisse {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0a141e;
+  vertical-align: middle;
+  width: 20%;
+}
+
+.menu-linkler {
+  display: inline-block;
+  width: 55%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.menu-linkler a {
+  text-decoration: none;
+  color: #323c46;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.menu-buttonlar {
+  display: inline-block;
+  width: 24%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.giris-btn {
+  background-color: white;
+  border: 1px solid #c8c8c8;
+  padding: 7px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.qeydiyyat-btn {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.konteyner {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ust-hisse {
+  background: linear-gradient(to bottom, #011627, #08121e);
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.ust-hisse h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.ust-hisse p {
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #b3c5d7;
+}
+
+.ozellikler {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.dordlu-gorus {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.kart {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.kart i {
+  font-size: 35px;
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+.kart h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.kart p {
+  font-size: 14px;
+  color: #777777;
+  line-height: 1.4;
+}
+
+.missiya {
+  padding: 60px 0 100px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.dar-konteyner {
+  max-width: 800px;
+}
+
+.missiya h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #000000;
+}
+
+.missiya p {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.alt-hisse {
+  background-color: #02182b;
+  color: #ffffff;
+  padding: 60px 0;
+  font-size: 14px;
+}
+
+.uc-lu-gorus {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-blok {
+  flex: 1;
+}
+
+.footer-blok h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-blok p {
+  color: #a4b8c9;
+  line-height: 1.6;
+}
+
+.footer-blok ul {
+  list-style: none;
+}
+
+.footer-blok ul li {
+  margin-bottom: 10px;
+}
+
+.footer-blok ul li a {
+  color: #a4b8c9;
+  text-decoration: none;
+}
+
+.footer-blok ul li a:hover {
+  color: #ffffff;
+}
+
+.email-link {
+  color: #a4b8c9;
+  margin-bottom: 25px;
+}
+
+.email-link i {
+  margin-right: 8px;
+}
+
+.sosial-ikonlar {
+  display: flex;
+  gap: 12px;
+}
+
+.sosial-ikonlar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #132d46;
+  color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sosial-ikonlar a:hover {
+  background-color: #f39c12;
+}

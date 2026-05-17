@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f3f3f3;
+  color: #222;
+}
+
+.ust-nav {
+  background-color: #ffffff;
+  padding: 20px 10%;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.logo-hisse {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0a141e;
+  vertical-align: middle;
+  width: 20%;
+}
+
+.menu-linkler {
+  display: inline-block;
+  width: 55%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.menu-linkler a {
+  text-decoration: none;
+  color: #323c46;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.menu-buttonlar {
+  display: inline-block;
+  width: 24%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.giris-btn {
+  background-color: white;
+  border: 1px solid #c8c8c8;
+  padding: 7px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.qeydiyyat-btn {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.ana_hisse {
+  width: 100%;
+}
+
+.tanitim_hissesi {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 45px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.tanitim_yazilar {
+  width: 50%;
+}
+
+.tanitim_yazilar h1 {
+  font-size: 46px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.muellif {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 14px;
+}
+
+.aciqlama {
+  width: 90%;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.oxu_btn {
+  background: #ff8a00;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tanitim_sekli {
+  width: 520px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.tanitim_sekli img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.kitab_bolmesi {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.basliq_hissesi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.basliq_hissesi h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.basliq_hissesi button {
+  border: 1px solid #ff8a00;
+  background: white;
+  color: #ff8a00;
+  padding: 8px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.kartlar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.kitab_karti {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.kitab_karti img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.kart_melumat {
+  padding: 14px;
+}
+
+.kart_melumat h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.muellif_adi {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.ulduz {
+  font-size: 13px;
+  color: #ff9800;
+  margin-bottom: 12px;
+}
+
+.qiymet {
+  color: #ff8a00;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.alt_hisse {
+  display: flex;
+  gap: 8px;
+}
+
+.sebet_btn {
+  flex: 1;
+  background: #ff8a00;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.balaca_btn {
+  width: 42px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.etiket {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff8a00;
+  color: white;
+  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.narinci_hisse {
+  background: #ff8a00;
+  text-align: center;
+  padding: 70px 20px;
+  margin-top: 60px;
+}
+
+.narinci_hisse h2 {
+  color: white;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.narinci_hisse p {
+  color: white;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.narinci_hisse button {
+  border: none;
+  background: white;
+  color: #ff8a00;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.alt-hisse {
+  background-color: #02182b;
+  color: #ffffff;
+  padding: 60px 0;
+  font-size: 14px;
+}
+
+.uc-lu-gorus {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-blok {
+  flex: 1;
+}
+
+.footer-blok h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-blok p {
+  color: #a4b8c9;
+  line-height: 1.6;
+}
+
+.footer-blok ul {
+  list-style: none;
+}
+
+.footer-blok ul li {
+  margin-bottom: 10px;
+}
+
+.footer-blok ul li a {
+  color: #a4b8c9;
+  text-decoration: none;
+}
+
+.footer-blok ul li a:hover {
+  color: #ffffff;
+}
+
+.email-link {
+  color: #a4b8c9;
+  margin-bottom: 25px;
+}
+
+.email-link i {
+  margin-right: 8px;
+}
+
+.sosial-ikonlar {
+  display: flex;
+  gap: 12px;
+}
+
+.sosial-ikonlar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #132d46;
+  color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sosial-ikonlar a:hover {
+  background-color: #f39c12;
+}

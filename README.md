@@ -6,11 +6,11 @@ Bu layihə, istifadəçilərin kitabları kəşf edə, kateqoriyalara görə fil
 
 ## 🎨 Layihənin Dizaynı
 Layihənin interfeys dizaynı tam şəkildə Figma üzərindən hazırlanmışdır:
-🔗 [Figma Dizayn Linki]([https://www.figma.com/make/8v7I
+🔗 [https://www.figma.com/make/8v7I
 zEbvQL7l5Q16FiDrF5/Online-Books
 tore-Platf
 orm?p=f&t=fgmxK52zOB4ojOO0-0&fu
-llscreen=])
+llscreen=1]
 
 ---
 

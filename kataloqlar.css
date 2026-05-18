@@ -1,3 +1,4 @@
+/* Reset filters and styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,77 +10,31 @@ body {
   background-color: #f5f6f8;
 }
 
-.ust-nav {
-  background-color: #ffffff;
-  padding: 20px 10%;
-  border-bottom: 1px solid #e6e6e6;
-  width: 100%;
-}
-
-.logo-hisse {
-  display: inline-block;
-  font-size: 24px;
-  font-weight: bold;
-  color: #0a141e;
-  vertical-align: middle;
-  width: 20%;
-}
-
-.menu-linkler {
-  display: inline-block;
-  width: 55%;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.menu-linkler a {
-  text-decoration: none;
-  color: #323c46;
-  margin: 0 15px;
-  font-size: 14px;
-}
-
-.menu-buttonlar {
-  display: inline-block;
-  width: 24%;
-  text-align: right;
-  vertical-align: middle;
-}
-
-.giris-btn {
-  background-color: white;
-  border: 1px solid #c8c8c8;
-  padding: 7px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-.qeydiyyat-btn {
-  background-color: #ff8c00;
-  color: white;
-  border: none;
-  padding: 8px 18px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.konteyner {
+/* Base Wrapper layout */
+.wrapper {
   width: 100%;
   max-width: 1400px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 30px; 
 }
 
-.basliq {
+.main-title {
   font-size: 48px;
   margin-bottom: 30px;
   font-weight: 800;
   color: #111827;
 }
 
-.filtr {
-  background: white;
+/* Sorting & Filters info block */
+.results-info {
+  color: #6b7280;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.filter-wrapper {
+  background: #ffffff;
   padding: 18px;
   border-radius: 18px;
   display: flex;
@@ -88,7 +43,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-.axtar {
+.search-field {
   flex: 1;
   padding: 15px;
   border: none;
@@ -98,7 +53,7 @@ body {
   outline: none;
 }
 
-.secim {
+.filter-select {
   width: 320px;
   padding: 15px;
   border: none;
@@ -109,37 +64,32 @@ body {
   cursor: pointer;
 }
 
-.say {
-  color: #6b7280;
-  margin-bottom: 25px;
-  font-size: 18px;
-}
-
-.kartlar {
+/* Card layout grid system */
+.catalog-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Manually defined grid lines */
   gap: 25px;
 }
 
-.kart {
-  background: white;
+.b-card {
+  background: #ffffff;
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid #e5e7eb;
 }
 
-.sekil {
+.img-wrap {
   position: relative;
 }
 
-.sekil img {
+.img-wrap img {
   width: 100%;
   height: 230px;
   object-fit: cover;
   display: block;
 }
 
-.etiket {
+.lbl-new {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -151,23 +101,24 @@ body {
   font-weight: 700;
 }
 
-.melumat {
+/* Inner card styles */
+.c-body {
   padding: 18px;
 }
 
-.melumat h2 {
+.c-body h2 {
   font-size: 18px;
   margin-bottom: 10px;
   color: #111827;
 }
 
-.muellif {
+.b-author {
   color: #6b7280;
   margin-bottom: 12px;
   font-size: 15px;
 }
 
-.reyting {
+.rate-row {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -175,22 +126,23 @@ body {
   font-weight: 700;
 }
 
-.ulduz {
+.star {
   color: #f59e0b;
 }
 
-.melumat h3 {
+.b-price {
   color: #f59e0b;
   font-size: 34px;
   margin-bottom: 18px;
 }
 
-.duyme {
+/* Actions logic styling */
+.card-btns {
   display: flex;
   gap: 10px;
 }
 
-.sebet {
+.btn-cart {
   flex: 1;
   border: none;
   background: #f59e0b;
@@ -202,11 +154,11 @@ body {
   font-size: 15px;
 }
 
-.sebet:hover {
+.btn-cart:hover {
   background: #ea9500;
 }
 
-.urek {
+.btn-fav {
   width: 45px;
   border: 1px solid #d1d5db;
   background: white;
@@ -215,7 +167,7 @@ body {
   font-size: 20px;
 }
 
-.tapilmadi {
+.not-found-msg {
   margin-top: 40px;
   background: white;
   border-radius: 16px;
@@ -227,68 +179,125 @@ body {
   display: none;
 }
 
+/* Navigation layout styles (Placed below to mimic standard dev behavior) */
+.bv-nav {
+  background-color: #ffffff;
+  padding: 20px 10%;
+  border-bottom: 1px solid #e6e6e6;
+  width: 100%;
+}
 
-.alt-hisse {
+.bv-logo {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0a141e;
+  vertical-align: middle;
+  width: 20%;
+}
+
+.nav-links {
+  display: inline-block;
+  width: 55%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #323c46;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.auth-btns {
+  display: inline-block;
+  width: 24%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.btn-login {
+  background-color: white;
+  border: 1px solid #c8c8c8;
+  padding: 7px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.btn-reg {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Site wide footer layout */
+.site-footer {
   background-color: #02182b;
   color: #ffffff;
   padding: 60px 0;
   font-size: 14px;
+  margin-top: 60px;
 }
 
-.uc-lu-gorus {
+.f-flex {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
 }
 
-.footer-blok {
+.f-block {
   flex: 1;
 }
 
-.footer-blok h3 {
+.f-block h3 {
   font-size: 16px;
   margin-bottom: 20px;
   color: #ffffff;
 }
 
-.footer-blok p {
+.f-block p {
   color: #a4b8c9;
   line-height: 1.6;
 }
 
-.footer-blok ul {
+.f-block ul {
   list-style: none;
 }
 
-.footer-blok ul li {
+.f-block ul li {
   margin-bottom: 10px;
 }
 
-.footer-blok ul li a {
+.f-block ul li a {
   color: #a4b8c9;
   text-decoration: none;
 }
 
-.footer-blok ul li a:hover {
+.f-block ul li a:hover {
   color: #ffffff;
 }
 
-.email-link {
+.f-mail {
   color: #a4b8c9;
   margin-bottom: 25px;
 }
 
-.email-link i {
+.f-mail i {
   margin-right: 8px;
 }
 
-.sosial-ikonlar {
+.f-socials {
   display: flex;
   gap: 12px;
 }
 
-.sosial-ikonlar a {
+.f-socials a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,6 +310,6 @@ body {
   font-size: 16px;
 }
 
-.sosial-ikonlar a:hover {
+.f-socials a:hover {
   background-color: #f39c12;
 }

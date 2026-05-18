@@ -4,42 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kataloq</title>
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="./kataloqlar.css" />
   </head>
 
   <body>
-    <div class="ust-nav">
-      <div class="logo-hisse">BookVerse</div>
-      <div class="menu-linkler">
+
+    <!-- Header area -->
+    <div class="bv-nav">
+      <div class="bv-logo">BookVerse</div>
+      <div class="nav-links">
         <a href="./ana sehife.html">Ana səhifə</a>
         <a href="./kataloqlar.html">Katalog</a>
         <a href="./haqqimizda.html">Haqqimizda</a>
         <a href="./xidmetler.html">Xidmətlər</a>
         <a href="./elaqe.html">Əlaqə</a>
       </div>
-      <div class="menu-buttonlar">
-        <button class="giris-btn">Daxil ol</button>
-        <button class="qeydiyyat-btn">Qeydiyyat</button>
+      <div class="auth-btns">
+        <button class="btn-login">Daxil ol</button>
+        <button class="btn-reg">Qeydiyyat</button>
       </div>
     </div>
 
-    <div class="konteyner">
-      <h1 class="basliq">Kataloq</h1>
+    <!-- Main Content -->
+    <div class="wrapper">
+      <h1 class="main-title">Kataloq</h1>
 
-      <div class="filtr">
-        <input type="text" placeholder="🔍 Axtar..." class="axtar" />
+      <div class="filter-wrapper">
+        <input type="text" placeholder="🔍 Axtar..." class="search-field" />
 
-        <select class="secim">
+        <select class="filter-select">
           <option>Hamısı</option>
           <option>Klassik</option>
           <option>Bədi</option>
@@ -50,7 +45,7 @@
           <option>Biznes</option>
         </select>
 
-        <select class="secim">
+        <select class="filter-select">
           <option>Ən yenilər</option>
           <option>Ən köhnələr</option>
           <option>Qiymət artan</option>
@@ -59,354 +54,261 @@
         </select>
       </div>
 
-      <p class="say">12 nəticə tapıldı</p>
+      <p class="results-info">12 nəticə tapıldı</p>
 
-      <div class="kartlar">
-        <div class="kart">
-          <div class="sekil">
-            <img
-              src="./sekil-eli.png"
-              alt=""
-            />
-            <span class="etiket">Yeni gələnlər</span>
+      <div class="catalog-grid">
+        <!-- b-card 1 -->
+        <div class="b-card">
+          <div class="img-wrap">
+            <img src="./sekil-eli.png" alt="Atomik Adətlər" />
+            <span class="lbl-new">Yeni gələnlər</span>
           </div>
-
-          <div class="melumat">
+          <div class="c-body">
             <h2>Atomik Adətlər</h2>
-
-            <p class="muellif">James Clear</p>
-
-            <div class="reyting">
-              <span class="ulduz">★</span>
+            <p class="b-author">James Clear</p>
+            <div class="rate-row">
+              <span class="star">★</span>
               <span>4.8</span>
             </div>
-
-            <h3>27.99 AZN</h3>
-
-            <div class="duyme">
-              <button class="sebet">🛒 Səbətə at</button>
-
-              <button class="urek">♡</button>
+            <h3 class="b-price">27.99 AZN</h3>
+            <div class="card-btns">
+              <button class="btn-cart">🛒 Səbətə at</button>
+              <button class="btn-fav">♡</button>
             </div>
           </div>
         </div>
 
-        <div class="kart">
-          <div class="sekil">
-            <img
-              src="./sekil-eli.png"
-              alt=""
-            />
-            <span class="etiket">Yeni gələnlər</span>
+        <!-- b-card 2 -->
+        <div class="b-card">
+          <div class="img-wrap">
+            <img src="./sekil-eli.png" alt="Düşünmək, Sürətli və Yavaş" />
+            <span class="lbl-new">Yeni gələnlər</span>
           </div>
-
-          <div class="melumat">
+          <div class="c-body">
             <h2>Düşünmək, Sürətli və Yavaş</h2>
-
-            <p class="muellif">Daniel Kahneman</p>
-
-            <div class="reyting">
-              <span class="ulduz">★</span>
+            <p class="b-author">Daniel Kahneman</p>
+            <div class="rate-row">
+              <span class="star">★</span>
               <span>4.7</span>
             </div>
-
-            <h3>26.99 AZN</h3>
-
-            <div class="duyme">
-              <button class="sebet">🛒 Səbətə at</button>
-
-              <button class="urek">♡</button>
+            <h3 class="b-price">26.99 AZN</h3>
+            <div class="card-btns">
+              <button class="btn-cart">🛒 Səbətə at</button>
+              <button class="btn-fav">♡</button>
             </div>
           </div>
         </div>
 
-        <div class="kart">
-          <div class="sekil">
-            <img
-              src="./sekil-eli.png"
-            />
-            <span class="etiket">Yeni gələnlər</span>
+        <!-- b-card 3 -->
+        <div class="b-card">
+          <div class="img-wrap">
+            <img src="./sekil-eli.png" alt="Steve Jobs" />
+            <span class="lbl-new">Yeni gələnlər</span>
           </div>
-
-          <div class="melumat">
+          <div class="c-body">
             <h2>Steve Jobs Bioqrafiyası</h2>
-
-            <p class="muellif">Walter Isaacson</p>
-
-            <div class="reyting">
-              <span class="ulduz">★</span>
+            <p class="b-author">Walter Isaacson</p>
+            <div class="rate-row">
+              <span class="star">★</span>
               <span>4.6</span>
             </div>
-
-            <h3>31.99 AZN</h3>
-
-            <div class="duyme">
-              <button class="sebet">🛒 Səbətə at</button>
-
-              <button class="urek">♡</button>
+            <h3 class="b-price">31.99 AZN</h3>
+            <div class="card-btns">
+              <button class="btn-cart">🛒 Səbətə at</button>
+              <button class="btn-fav">♡</button>
             </div>
           </div>
         </div>
 
-        <div class="kart">
-          <div class="sekil">
-            <img
-              src="./sekil-eli.png"
-              alt=""
-            />
-            <span class="etiket">Yeni gələnlər</span>
+        <!-- b-card 4 -->
+        <div class="b-card">
+          <div class="img-wrap">
+            <img src="./sekil-eli.png" alt="Sapiens" />
+            <span class="lbl-new">Yeni gələnlər</span>
           </div>
-
-          <div class="melumat">
+          <div class="c-body">
             <h2>Sapiens: İnsanlığın Qısa Tarixi</h2>
-
-            <p class="muellif">Yuval Noah Harari</p>
-
-            <div class="reyting">
-              <span class="ulduz">★</span>
+            <p class="b-author">Yuval Noah Harari</p>
+            <div class="rate-row">
+              <span class="star">★</span>
               <span>4.6</span>
             </div>
-
-            <h3>29.99 AZN</h3>
-
-            <div class="duyme">
-              <button class="sebet">🛒 Səbətə at</button>
-
-              <button class="urek">♡</button>
+            <h3 class="b-price">29.99 AZN</h3>
+            <div class="card-btns">
+              <button class="btn-cart">🛒 Səbətə at</button>
+              <button class="btn-fav">♡</button>
             </div>
           </div>
         </div>
 
-        <div class="kart">
-          <div class="sekil">
-            <img
-              src="./sekil-eli.png"
-              alt=""
-            />
+        <!-- b-card 5 -->
+        <div class="b-card">
+          <div class="img-wrap">
+            <img src="./sekil-eli.png" alt="Yaxşı Əsərlərdən Böyük Əsərlərə" />
           </div>
-
-          <div class="melumat">
+          <div class="c-body">
             <h2>Yaxşı Əsərlərdən Böyük Əsərlərə</h2>
-
-            <p class="muellif">Jim Collins</p>
-
-            <div class="reyting">
-              <span class="ulduz">★</span>
+            <p class="b-author">Jim Collins</p>
+            <div class="rate-row">
+              <span class="star">★</span>
               <span>4.5</span>
             </div>
-
-            <h3>28.99 AZN</h3>
-
-            <div class="duyme">
-              <button class="sebet">🛒 Səbətə at</button>
-
-              <button class="urek">♡</button>
+            <h3 class="b-price">28.99 AZN</h3>
+            <div class="card-btns">
+              <button class="btn-cart">🛒 Səbətə at</button>
+              <button class="btn-fav">♡</button>
             </div>
           </div>
         </div>
 
-        <div class="kart">
-          <div class="sekil">
-            <img
-              src="./sekil-eli.png"
-              alt=""
-            />
+        <!-- b-card 6 -->
+        <div class="b-card">
+          <div class="img-wrap">
+            <img src="./sekil-eli.png" alt="Harry Potter" />
           </div>
-
-          <div class="melumat">
+          <div class="c-body">
             <h2>Harry Potter və Fəlsəfə Daşı</h2>
-
-            <p class="muellif">J.K. Rowling</p>
-
-            <div class="reyting">
-              <span class="ulduz">★</span>
+            <p class="b-author">J.K. Rowling</p>
+            <div class="rate-row">
+              <span class="star">★</span>
               <span>4.9</span>
             </div>
-
-            <h3>24.99 AZN</h3>
-
-            <div class="duyme">
-              <button class="sebet">🛒 Səbətə at</button>
-
-              <button class="urek">♡</button>
+            <h3 class="b-price">24.99 AZN</h3>
+            <div class="card-btns">
+              <button class="btn-cart">🛒 Səbətə at</button>
+              <button class="btn-fav">♡</button>
             </div>
           </div>
         </div>
 
-        <div class="kart">
-          <div class="sekil">
-            <img
-              src="./sekil-eli.png"
-              alt=""
-            />
+        <!-- b-card 7 -->
+        <div class="b-card">
+          <div class="img-wrap">
+            <img src="./sekil-eli.png" alt="Yüzük Hökmdarı" />
           </div>
-
-          <div class="melumat">
+          <div class="c-body">
             <h2>Yüzük Hökmdarı</h2>
-
-            <p class="muellif">J.R.R. Tolkien</p>
-
-            <div class="reyting">
-              <span class="ulduz">★</span>
+            <p class="b-author">J.R.R. Tolkien</p>
+            <div class="rate-row">
+              <span class="star">★</span>
               <span>4.9</span>
             </div>
-
-            <h3>35.99 AZN</h3>
-
-            <div class="duyme">
-              <button class="sebet">🛒 Səbətə at</button>
-
-              <button class="urek">♡</button>
+            <h3 class="b-price">35.99 AZN</h3>
+            <div class="card-btns">
+              <button class="btn-cart">🛒 Səbətə at</button>
+              <button class="btn-fav">♡</button>
             </div>
           </div>
         </div>
 
-        <div class="kart">
-          <div class="sekil">
-            <img
-              src="./sekil-eli.png"
-              alt=""
-            />
+        <!-- b-card 8 -->
+        <div class="b-card">
+          <div class="img-wrap">
+            <img src="./sekil-eli.png" alt="1984" />
           </div>
-
-          <div class="melumat">
+          <div class="c-body">
             <h2>1984</h2>
-
-            <p class="muellif">George Orwell</p>
-
-            <div class="reyting">
-              <span class="ulduz">★</span>
+            <p class="b-author">George Orwell</p>
+            <div class="rate-row">
+              <span class="star">★</span>
               <span>4.8</span>
             </div>
-
-            <h3>15.99 AZN</h3>
-
-            <div class="duyme">
-              <button class="sebet">🛒 Səbətə at</button>
-
-              <button class="urek">♡</button>
+            <h3 class="b-price">15.99 AZN</h3>
+            <div class="card-btns">
+              <button class="btn-cart">🛒 Səbətə at</button>
+              <button class="btn-fav">♡</button>
             </div>
           </div>
         </div>
 
-        <div class="kart">
-          <div class="sekil">
-            <img
-              src="./sekil-eli.png"
-              alt=""
-            />
+        <!-- b-card 9 -->
+        <div class="b-card">
+          <div class="img-wrap">
+            <img src="./sekil-eli.png" alt="Kiçik Şahzadə" />
           </div>
-
-          <div class="melumat">
+          <div class="c-body">
             <h2>Kiçik Şahzadə</h2>
-
-            <p class="muellif">Antoine de Saint-Exupéry</p>
-
-            <div class="reyting">
-              <span class="ulduz">★</span>
+            <p class="b-author">Antoine de Saint-Exupéry</p>
+            <div class="rate-row">
+              <span class="star">★</span>
               <span>4.9</span>
             </div>
-
-            <h3>14.99 AZN</h3>
-
-            <div class="duyme">
-              <button class="sebet">🛒 Səbətə at</button>
-
-              <button class="urek">♡</button>
+            <h3 class="b-price">14.99 AZN</h3>
+            <div class="card-btns">
+              <button class="btn-cart">🛒 Səbətə at</button>
+              <button class="btn-fav">♡</button>
             </div>
           </div>
         </div>
 
-        <div class="kart">
-          <div class="sekil">
-            <img
-              src="./sekil-eli.png"
-              alt=""
-            />
+        <!-- b-card 10 -->
+        <div class="b-card">
+          <div class="img-wrap">
+            <img src="./sekil-eli.png" alt="Böyük Gatsby" />
           </div>
-
-          <div class="melumat">
+          <div class="c-body">
             <h2>Böyük Gatsby</h2>
-
-            <p class="muellif">F. Scott Fitzgerald</p>
-
-            <div class="reyting">
-              <span class="ulduz">★</span>
+            <p class="b-author">F. Scott Fitzgerald</p>
+            <div class="rate-row">
+              <span class="star">★</span>
               <span>4.5</span>
             </div>
-
-            <h3>19.99 AZN</h3>
-
-            <div class="duyme">
-              <button class="sebet">🛒 Səbətə at</button>
-
-              <button class="urek">♡</button>
+            <h3 class="b-price">19.99 AZN</h3>
+            <div class="card-btns">
+              <button class="btn-cart">🛒 Səbətə at</button>
+              <button class="btn-fav">♡</button>
             </div>
           </div>
         </div>
 
-        <div class="kart">
-          <div class="sekil">
-            <img
-              src="./sekil-eli.png"
-              alt=""
-            />
+        <!-- b-card 11 -->
+        <div class="b-card">
+          <div class="img-wrap">
+            <img src="./sekil-eli.png" alt="Suç və Cəza" />
           </div>
-
-          <div class="melumat">
+          <div class="c-body">
             <h2>Suç və Cəza</h2>
-
-            <p class="muellif">Fyodor Dostoyevski</p>
-
-            <div class="reyting">
-              <span class="ulduz">★</span>
+            <p class="b-author">Fyodor Dostoyevski</p>
+            <div class="rate-row">
+              <span class="star">★</span>
               <span>4.7</span>
             </div>
-
-            <h3>22.99 AZN</h3>
-
-            <div class="duyme">
-              <button class="sebet">🛒 Səbətə at</button>
-
-              <button class="urek">♡</button>
+            <h3 class="b-price">22.99 AZN</h3>
+            <div class="card-btns">
+              <button class="btn-cart">🛒 Səbətə at</button>
+              <button class="btn-fav">♡</button>
             </div>
           </div>
         </div>
 
-        <div class="kart">
-          <div class="sekil">
-            <img
-              src="./sekil-eli.png"
-              alt=""
-            />
+        <!-- b-card 12 -->
+        <div class="b-card">
+          <div class="img-wrap">
+            <img src="./sekil-eli.png" alt="Qürurlu və Qərəzli" />
           </div>
-
-          <div class="melumat">
+          <div class="c-body">
             <h2>Qürurlu və Qərəzli</h2>
-
-            <p class="muellif">Jane Austen</p>
-
-            <div class="reyting">
-              <span class="ulduz">★</span>
+            <p class="b-author">Jane Austen</p>
+            <div class="rate-row">
+              <span class="star">★</span>
               <span>4.5</span>
             </div>
-
-            <h3>18.99 AZN</h3>
-
-            <div class="duyme">
-              <button class="sebet">🛒 Səbətə at</button>
-
-              <button class="urek">♡</button>
+            <h3 class="b-price">18.99 AZN</h3>
+            <div class="card-btns">
+              <button class="btn-cart">🛒 Səbətə at</button>
+              <button class="btn-fav">♡</button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="tapilmadi">Nəticə tapılmadı</div>
+      <div class="not-found-msg">Nəticə tapılmadı</div>
     </div>
-    <footer class="alt-hisse">
-      <div class="konteyner uc-lu-gorus">
-        <div class="footer-blok">
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="wrapper f-flex">
+        <div class="f-block">
           <h3>Haqqımızda</h3>
           <p>
             BookVerse - ən yaxşı kitabları bir yerdə təqdim edən onlayn
@@ -414,7 +316,7 @@
             kitab seçimi təklif etmək üçün yaradılmışıq.
           </p>
         </div>
-        <div class="footer-blok">
+        <div class="f-block">
           <h3>Quick Links</h3>
           <ul>
             <li><a href="#">Kataloq</a></li>
@@ -425,13 +327,13 @@
             <li><a href="#">Şərtlər və qaydalar</a></li>
           </ul>
         </div>
-        <div class="footer-blok">
+        <div class="f-block">
           <h3>Bizimlə əlaqə</h3>
-          <p class="email-link">
+          <p class="f-mail">
             <i class="fa-regular fa-envelope"></i> info@bookverse.az
           </p>
           <h3>Bizi izləyin</h3>
-          <div class="sosial-ikonlar">
+          <div class="f-socials">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>

@@ -3,36 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kitab Saytı</title>
+
+    <title>BookVerse</title>
+
     <link rel="stylesheet" href="./ana sehife.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
   </head>
+
   <body>
-    <div class="ust-nav">
-      <div class="logo-hisse">BookVerse</div>
-      <div class="menu-linkler">
+    <header class="ust-nav">
+      <div class="logo-hisse">📖 BookVerse</div>
+
+      <nav class="menu-linkler">
         <a href="./ana sehife.html">Ana səhifə</a>
-        <a href="./kataloqlar.html">Katalog</a>
-        <a href="./haqqimizda.html">Haqqimizda</a>
+        <a href="./kataloqlar.html">Kataloq</a>
+        <a href="./haqqimizda.html">Haqqımızda</a>
         <a href="./xidmetler.html">Xidmətlər</a>
         <a href="./elaqe.html">Əlaqə</a>
-      </div>
-      <div class="menu-buttonlar">
-        <button class="giris-btn">Daxil ol</button>
-        <button class="qeydiyyat-btn">Qeydiyyat</button>
-      </div>
-    </div>
+      </nav>
 
-    <main class="ana_hisse">
+      <div class="menu-buttonlar">
+        <button class="giris-btn">
+          <a href="./giris.html">Daxil ol</a>
+        </button>
+
+        <button class="qeydiyyat-btn">
+          <a href="./qeydiyyat.html">Qeydiyyat</a>
+        </button>
+      </div>
+    </header>
+
+    <main>
       <section class="tanitim_hissesi">
         <div class="tanitim_yazilar">
           <h1>Böyük Gatsby</h1>
@@ -48,7 +61,7 @@
         </div>
 
         <div class="tanitim_sekli">
-          <img src="./image.png" alt="" />
+          <img src="./image.png" alt="kitab" />
         </div>
       </section>
 
@@ -104,7 +117,7 @@
             <img src="./image.png" alt="" />
 
             <div class="kart_melumat">
-              <h3>Harry Potter və Fəlsəfə Daşı</h3>
+              <h3>Harry Potter</h3>
 
               <p class="muellif_adi">J.K. Rowling</p>
 
@@ -126,7 +139,7 @@
             <div class="kart_melumat">
               <h3>Yüzük Hökmdarı</h3>
 
-              <p class="muellif_adi">J.R.R. Tolkien</p>
+              <p class="muellif_adi">J.R.R Tolkien</p>
 
               <div class="ulduz">★ 4.7</div>
 
@@ -151,7 +164,7 @@
 
         <div class="kartlar">
           <div class="kitab_karti">
-            <span class="etiket"> Yeni gələnlər </span>
+            <span class="etiket">Yeni</span>
 
             <img src="./image.png" alt="" />
 
@@ -173,12 +186,12 @@
           </div>
 
           <div class="kitab_karti">
-            <span class="etiket"> Yeni gələnlər </span>
+            <span class="etiket">Yeni</span>
 
             <img src="./image.png" alt="" />
 
             <div class="kart_melumat">
-              <h3>Sapiens: İnsanlığın Qısa Tarixi</h3>
+              <h3>Sapiens</h3>
 
               <p class="muellif_adi">Yuval Noah Harari</p>
 
@@ -195,12 +208,12 @@
           </div>
 
           <div class="kitab_karti">
-            <span class="etiket"> Yeni gələnlər </span>
+            <span class="etiket">Yeni</span>
 
             <img src="./image.png" alt="" />
 
             <div class="kart_melumat">
-              <h3>Düşünmək, Sürətli və Yavaş</h3>
+              <h3>Düşünmək</h3>
 
               <p class="muellif_adi">Daniel Kahneman</p>
 
@@ -217,12 +230,12 @@
           </div>
 
           <div class="kitab_karti">
-            <span class="etiket"> Yeni gələnlər </span>
+            <span class="etiket">Yeni</span>
 
             <img src="./image.png" alt="" />
 
             <div class="kart_melumat">
-              <h3>Steve Jobs Bioqrafiyası</h3>
+              <h3>Steve Jobs</h3>
 
               <p class="muellif_adi">Walter Isaacson</p>
 
@@ -243,44 +256,57 @@
       <section class="narinci_hisse">
         <h2>Ən yaxşı kitabları kəşf edin</h2>
 
-        <p>Minlərlə kitab, bir klikdə</p>
+        <p>Minlərlə kitab bir klik uzaqlığında</p>
 
         <button>Kəşf et →</button>
       </section>
     </main>
+
     <footer class="alt-hisse">
-      <div class="konteyner uc-lu-gorus">
-        <div class="footer-blok">
-          <h3>Haqqımızda</h3>
-          <p>
-            BookVerse - ən yaxşı kitabları bir yerdə təqdim edən onlayn
-            platformadır. Biz oxucuların həyatını asanlaşdırmaq və onlara geniş
-            kitab seçimi təklif etmək üçün yaradılmışıq.
-          </p>
-        </div>
-        <div class="footer-blok">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#">Kataloq</a></li>
-            <li><a href="#">Haqqımızda</a></li>
-            <li><a href="#">Xidmətlər</a></li>
-            <li><a href="#">Əlaqə</a></li>
-            <li><a href="#">Məxfilik siyasəti</a></li>
-            <li><a href="#">Şərtlər və qaydalar</a></li>
-          </ul>
-        </div>
-        <div class="footer-blok">
-          <h3>Bizimlə əlaqə</h3>
-          <p class="email-link">
-            <i class="fa-regular fa-envelope"></i> info@bookverse.az
-          </p>
-          <h3>Bizi izləyin</h3>
-          <div class="sosial-ikonlar">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <div class="konteyner">
+        <div class="uc-lu-gorus">
+          <div class="footer-blok">
+            <h3>Haqqımızda</h3>
+
+            <p>
+              BookVerse oxucular üçün yaradılmış onlayn kitab platformasıdır.
+              Burada fərqli janrlarda kitabları rahat şəkildə tapa bilərsiniz.
+            </p>
+          </div>
+
+          <div class="footer-blok">
+            <h3>Quick Links</h3>
+
+            <ul>
+              <li><a href="#">Kataloq</a></li>
+              <li><a href="#">Haqqımızda</a></li>
+              <li><a href="#">Xidmətlər</a></li>
+              <li><a href="#">Əlaqə</a></li>
+              <li><a href="#">Məxfilik siyasəti</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-blok">
+            <h3>Bizimlə əlaqə</h3>
+
+            <p class="email-link">
+              <i class="fa-regular fa-envelope"></i>
+              info@bookverse.az
+            </p>
+
+            <h3>Bizi izləyin</h3>
+
+            <div class="sosial-ikonlar">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
+
+        <div class="alt-xett">© 2025 BookVerse. All rights reserved.</div>
       </div>
     </footer>
   </body>

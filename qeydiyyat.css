@@ -1,0 +1,247 @@
+/* Ümumi Sıfırlamalar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa; /* Səhifənin arxa fonu */
+  color: #333333;
+}
+
+/* ==========================================================================
+   Müştərinin Naviqasiya Stilləri (Toxunulmadı, Olduğu kimi saxlanıldı)
+   ========================================================================== */
+.ust-nav {
+  background-color: #ffffff;
+  padding: 20px 10%;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.logo-hisse {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0a141e;
+  vertical-align: middle;
+  width: 20%;
+}
+
+.menu-linkler {
+  display: inline-block;
+  width: 55%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.menu-linkler a {
+  text-decoration: none;
+  color: #323c46;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.menu-buttonlar {
+  display: inline-block;
+  width: 24%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.giris-btn {
+  background-color: white;
+  border: 1px solid #c8c8c8;
+  padding: 7px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.qeydiyyat-btn {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   YENİ: Qeydiyyat Bölməsinin (Main) Stilləri
+   ========================================================================== */
+.qeydiyyat-sehifesi {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.qeydiyyat-konteyner {
+  width: 100%;
+  max-width: 500px; /* Qeydiyyat pəncərəsinin şəkildəki eni */
+  padding: 0 20px;
+}
+
+.qeydiyyat-pencerəsi {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.qeydiyyat-pencerəsi h2 {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.giris-qrupu {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.giris-qrupu label {
+  display: block;
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.giris-qrupu input {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f1f1f1; /* Şəkildəki açıq boz input fonu */
+  font-size: 15px;
+  outline: none;
+  color: #333333;
+}
+
+/* Portaxal rəngli böyük Qeydiyyat düyməsi */
+.forma-qeydiyyat-btn {
+  width: 100%;
+  background-color: #ff8c00; /* Şəkildəki parlaq narıncı/portaxal rəng */
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.forma-qeydiyyat-btn:hover {
+  background-color: #e07b00;
+}
+
+/* Altdakı daxil ol mətni */
+.hesab-yoxdur {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 15px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.hesab-yoxdur a {
+  color: #ff8c00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hesab-yoxdur a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Müştərinin Footer Stilləri (Toxunulmadı, Olduğu kimi saxlanıldı)
+   ========================================================================== */
+.konteyner {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.alt-hisse {
+  background-color: #02182b;
+  color: #ffffff;
+  padding: 60px 0;
+  font-size: 14px;
+}
+
+.uc-lu-gorus {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-blok {
+  flex: 1;
+}
+
+.footer-blok h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-blok p {
+  color: #a4b8c9;
+  line-height: 1.6;
+}
+
+.footer-blok ul {
+  list-style: none;
+}
+
+.footer-blok ul li {
+  margin-bottom: 10px;
+}
+
+.footer-blok ul li a {
+  color: #a4b8c9;
+  text-decoration: none;
+}
+
+.footer-blok ul li a:hover {
+  color: #ffffff;
+}
+
+.email-link {
+  color: #a4b8c9;
+  margin-bottom: 25px;
+}
+
+.email-link i {
+  margin-right: 8px;
+}
+
+.sosial-ikonlar {
+  display: flex;
+  gap: 12px;
+}
+
+.sosial-ikonlar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #132d46;
+  color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sosial-ikonlar a:hover {
+  background-color: #f39c12;
+}

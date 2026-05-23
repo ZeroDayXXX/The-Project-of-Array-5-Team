@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BookVerse - Əlaqə</title>
-    <link rel="stylesheet" href="./elaqe.css" />
+    <title>BookVerse - Qeydiyyat</title>
+    <link rel="stylesheet" href="/qeydiyyat.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -33,39 +33,43 @@
         </button>
       </div>
     </div>
-    <header>
-      <h1>Bizimlə əlaqə</h1>
-      <p>Bizə müraciət edin, sizə kömək etməkdən məmnun olarıq</p>
-    </header>
-    <main>
-      <section class="melumatlar">
-        <h2>Əlaqə məlumatları</h2>
-        <p><b>Email</b><br />info@bookverse.az</p>
-        <p><b>Telefon</b><br />+994 50 123 45 67</p>
-        <p><b>Ünvan</b><br />Bakı, Azərbaycan</p>
 
-        <h3>İş saatları</h3>
-        <p>Bazar ertəsi - Cümə: 09:00 - 18:00</p>
-        <p>Şənbə: 10:00 - 16:00</p>
-        <p>Bazar: Bağlıdır</p>
-      </section>
-      <form>
-        <h2>Bizə yazın</h2>
-        <label>Ad</label>
-        <input type="text" />
-        <br /><br />
-        <label>Email</label>
-        <input type="email" />
-        <br /><br />
-        <label>Mövzu</label>
-        <input type="text" />
-        <br /><br />
-        <label>Mesaj</label>
-        <textarea rows="1"></textarea>
-        <br /><br />
-        <button type="submit">Göndər</button>
-      </form>
+    <main class="qeydiyyat-sehifesi">
+      <div class="qeydiyyat-konteyner">
+        <div class="qeydiyyat-pencerəsi">
+          <h2>Qeydiyyat</h2>
+
+          <form action="#">
+            <div class="giris-qrupu">
+              <label for="ad">Ad</label>
+              <input type="text" id="ad" required />
+            </div>
+
+            <div class="giris-qrupu">
+              <label for="istifadeci-adi">İstifadəçi adı</label>
+              <input type="text" id="istifadeci-adi" required />
+            </div>
+
+            <div class="giris-qrupu">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="giris-qrupu">
+              <label for="sifre">Şifrə</label>
+              <input type="password" id="sifre" required />
+            </div>
+
+            <button type="submit" class="forma-qeydiyyat-btn">Qeydiyyat</button>
+          </form>
+
+          <p class="hesab-yoxdur">
+            Artıq hesabınız var? <a href="#">Daxil ol</a>
+          </p>
+        </div>
+      </div>
     </main>
+
     <footer class="alt-hisse">
       <div class="konteyner uc-lu-gorus">
         <div class="footer-blok">

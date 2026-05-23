@@ -6,62 +6,8 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: #f3f3f3;
+  background: #f5f5f5;
   color: #222;
-}
-
-.ust-nav {
-  background-color: #ffffff;
-  padding: 20px 10%;
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.logo-hisse {
-  display: inline-block;
-  font-size: 24px;
-  font-weight: bold;
-  color: #0a141e;
-  vertical-align: middle;
-  width: 20%;
-}
-
-.menu-linkler {
-  display: inline-block;
-  width: 55%;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.menu-linkler a {
-  text-decoration: none;
-  color: #323c46;
-  margin: 0 15px;
-  font-size: 14px;
-}
-
-.menu-buttonlar {
-  display: inline-block;
-  width: 24%;
-  text-align: right;
-  vertical-align: middle;
-}
-
-.giris-btn {
-  background-color: white;
-  border: 1px solid #c8c8c8;
-  padding: 7px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-.qeydiyyat-btn {
-  background-color: #ff8c00;
-  color: white;
-  border: none;
-  padding: 8px 18px;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 button {
@@ -73,105 +19,169 @@ img {
   display: block;
 }
 
-.ana_hisse {
-  width: 100%;
+.ust-nav {
+  background: white;
+  border-bottom: 1px solid #e7e7e7;
+
+  padding: 18px 7%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-hisse {
+  font-size: 24px;
+  font-weight: 800;
+  color: #111;
+}
+
+.menu-linkler {
+  display: flex;
+  gap: 28px;
+}
+
+.menu-linkler a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.menu-linkler a:hover {
+  color: #ff8a00;
+}
+
+.menu-buttonlar {
+  display: flex;
+  gap: 10px;
+}
+
+.giris-btn {
+  background: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.giris-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.qeydiyyat-btn {
+  background: #ff8a00;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 17px;
+  cursor: pointer;
+}
+
+.qeydiyyat-btn a {
+  text-decoration: none;
+  color: white;
 }
 
 .tanitim_hissesi {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 45px 0;
+  margin: auto;
+
+  padding: 60px 20px;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 70px;
 }
 
 .tanitim_yazilar {
-  width: 50%;
+  flex: 1;
 }
 
 .tanitim_yazilar h1 {
-  font-size: 46px;
+  font-size: 52px;
   font-weight: 800;
   margin-bottom: 12px;
 }
 
 .muellif {
+  color: #888;
   font-size: 15px;
-  color: #777;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .aciqlama {
+  color: #666;
   width: 90%;
-  font-size: 14px;
-  color: #555;
   line-height: 1.7;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .oxu_btn {
   background: #ff8a00;
   color: white;
   border: none;
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 600;
+  border-radius: 7px;
+  padding: 11px 20px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .tanitim_sekli {
   width: 520px;
-  height: 250px;
+  height: 300px;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 .tanitim_sekli img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .kitab_bolmesi {
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 55px auto;
+  padding: 0 20px;
 }
 
 .basliq_hissesi {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+
+  margin-bottom: 25px;
 }
 
 .basliq_hissesi h2 {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 30px;
 }
 
 .basliq_hissesi button {
-  border: 1px solid #ff8a00;
   background: white;
+  border: 1px solid #ff8a00;
   color: #ff8a00;
+
   padding: 8px 14px;
   border-radius: 7px;
-  font-size: 13px;
+
   cursor: pointer;
 }
 
 .kartlar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
+  gap: 22px;
 }
 
 .kitab_karti {
   background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
+  border: 1px solid #e5e5e5;
+
   position: relative;
 }
 
@@ -181,7 +191,7 @@ img {
 }
 
 .kart_melumat {
-  padding: 14px;
+  padding: 15px;
 }
 
 .kart_melumat h3 {
@@ -192,13 +202,13 @@ img {
 .muellif_adi {
   font-size: 13px;
   color: #888;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .ulduz {
-  font-size: 13px;
   color: #ff9800;
   margin-bottom: 12px;
+  font-size: 13px;
 }
 
 .qiymet {
@@ -218,17 +228,20 @@ img {
   background: #ff8a00;
   border: none;
   color: white;
+
   padding: 10px;
   border-radius: 6px;
+
   font-size: 13px;
-  cursor: pointer;
   font-weight: 600;
+
+  cursor: pointer;
 }
 
 .balaca_btn {
   width: 42px;
-  border: 1px solid #ccc;
   background: white;
+  border: 1px solid #d8d8d8;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -237,55 +250,66 @@ img {
   position: absolute;
   top: 12px;
   right: 12px;
+
   background: #ff8a00;
   color: white;
+
   font-size: 11px;
+  font-weight: 600;
+
   padding: 6px 10px;
   border-radius: 20px;
-  font-weight: 600;
 }
 
 .narinci_hisse {
   background: #ff8a00;
   text-align: center;
-  padding: 70px 20px;
-  margin-top: 60px;
+
+  padding: 80px 20px;
+  margin-top: 70px;
 }
 
 .narinci_hisse h2 {
   color: white;
-  font-size: 38px;
+  font-size: 40px;
   margin-bottom: 10px;
 }
 
 .narinci_hisse p {
   color: white;
-  margin-bottom: 24px;
-  font-size: 15px;
+  margin-bottom: 25px;
 }
 
 .narinci_hisse button {
-  border: none;
   background: white;
   color: #ff8a00;
-  padding: 12px 22px;
+
+  border: none;
   border-radius: 8px;
+
+  padding: 12px 22px;
   font-weight: 600;
+
   cursor: pointer;
 }
 
 .alt-hisse {
-  background-color: #02182b;
-  color: #ffffff;
-  padding: 60px 0;
-  font-size: 14px;
+  background: #031827;
+  padding: 65px 0 25px;
+}
+
+.konteyner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
 
 .uc-lu-gorus {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
+  gap: 70px;
+
+  margin-bottom: 40px;
 }
 
 .footer-blok {
@@ -293,14 +317,15 @@ img {
 }
 
 .footer-blok h3 {
-  font-size: 16px;
+  color: white;
   margin-bottom: 20px;
-  color: #ffffff;
+  font-size: 17px;
 }
 
 .footer-blok p {
-  color: #a4b8c9;
-  line-height: 1.6;
+  color: #b7c3cc;
+  line-height: 1.8;
+  font-size: 14px;
 }
 
 .footer-blok ul {
@@ -308,25 +333,20 @@ img {
 }
 
 .footer-blok ul li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .footer-blok ul li a {
-  color: #a4b8c9;
+  color: #b7c3cc;
   text-decoration: none;
 }
 
 .footer-blok ul li a:hover {
-  color: #ffffff;
+  color: white;
 }
 
 .email-link {
-  color: #a4b8c9;
   margin-bottom: 25px;
-}
-
-.email-link i {
-  margin-right: 8px;
 }
 
 .sosial-ikonlar {
@@ -335,18 +355,31 @@ img {
 }
 
 .sosial-ikonlar a {
+  width: 38px;
+  height: 38px;
+
+  background: #16324a;
+  color: white;
+
+  border-radius: 50%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 36px;
-  height: 36px;
-  background-color: #132d46;
-  color: #ffffff;
-  border-radius: 50%;
+
   text-decoration: none;
-  font-size: 16px;
 }
 
 .sosial-ikonlar a:hover {
-  background-color: #f39c12;
+  background: #ff8a00;
+}
+
+.alt-xett {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  text-align: center;
+  padding-top: 20px;
+
+  color: #a8b5bf;
+  font-size: 13px;
 }

@@ -39,7 +39,7 @@ body {
 .menu-buttonlar {
   text-align: right;
   display: flex;
-  gap: 5px; 
+  gap: 5px;
 }
 
 .giris-btn {
@@ -48,7 +48,7 @@ body {
   padding: 7px 16px;
   border-radius: 4px;
   cursor: pointer;
-  width: auto; 
+  width: auto;
 }
 
 .qeydiyyat-btn {
@@ -58,7 +58,7 @@ body {
   padding: 8px 18px;
   border-radius: 4px;
   cursor: pointer;
-  width: auto; 
+  width: auto;
 }
 
 /* --- Digər Hissələr --- */
@@ -138,7 +138,6 @@ form button {
   box-sizing: border-box;
 }
 
-
 .alt-hisse {
   background-color: #02182b;
   color: #ffffff;
@@ -212,7 +211,11 @@ form button {
   font-size: 16px;
 }
 
+.konteyner {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .sosial-ikonlar a:hover {
   background-color: #f39c12;
 }
-

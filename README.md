@@ -27,7 +27,7 @@ Layihənin ərsəyə gəlməsində iştirak edən komanda üzvləri və onların
 
 | Komanda Üzvü | Öhdəliyi (Yığdığı Hissələr) |
 | :--- | :--- |
-| Ramin | 🏠 Ana Səhifə | 🔑 Giriş | 📝 Qeydiyyat |
+| Ramin | 🏠 Ana Səhifə 🔑 Giriş 📝 Qeydiyyat |
 | Əli | 📖 Kataloq Səhifəsi (Filtrləmə və Kitab kartları) |
 | İsmayıl | ℹ️ Haqqımızda Səhifəsi & 🦶 Footer (Saytın aşağı hissəsi)  |
 | Əminə | 🛠️ Xidmətlərimiz Səhifəsi (Kartlar və İkonlar) & 🗺️ Naviqasiya Paneli (Header/Nav) |
